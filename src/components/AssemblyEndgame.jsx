@@ -31,7 +31,7 @@ export default function AssemblyEndgame(){
     const isLanguageLost = index < wrongGuessCount
 
     return (
-        <div className={`languageCard ${isLanguageLost ? "lost" : null} `}
+        <div className={`languageCard ${isLanguageLost ? "lost" : null}`}
             key={index} 
             style ={{
                         backgroundColor : language.backgroundColor,
@@ -82,7 +82,7 @@ export default function AssemblyEndgame(){
                 className= { className } 
                 disabled = {isGameOver}
                 >
-                    {letter} 
+                    {letter.toLocaleUpperCase()} 
             </button>
         )
     })
