@@ -82,7 +82,7 @@ export default function AssemblyEndgame(){
                 className= { className } 
                 disabled = {isGameOver}
                 >
-                    {letter.toLocaleUpperCase()} 
+                    {letter.toUpperCase()} 
             </button>
         )
     })
