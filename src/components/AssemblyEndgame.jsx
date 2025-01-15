@@ -4,14 +4,11 @@ import Confetti from 'react-confetti'
 import { languages } from "./languages"
 import { getFarewellText , getRandomWord } from './utils'
 
-// let word = getRandomWord().split("")
-
 export default function AssemblyEndgame(){
      
-    const alphabets = "abcdefghijklmnopqrstuvwxyz".split("")
-    const [currentWord , setCurrentWord ] = React.useState(getRandomWord().split(""))
-
-    console.log(currentWord)
+    const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+     
+    const [currentWord , setCurrentWord ] = React.useState(getRandomWord().toUpperCase().split(""))
 
     const [guessedLetters, setGuessedLetters] = React.useState([])
     
